@@ -1,5 +1,8 @@
-# room4_fm
+# Room4.fm
 
+Project made using Vue.js + Vuex + Vue CLI
+
+Api - https://www.last.fm/api
 ## Project setup
 ```
 npm install
