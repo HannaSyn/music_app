@@ -3,6 +3,10 @@
 Project made using Vue.js + Vuex + Vue CLI
 
 Api - https://www.last.fm/api
+
+You need add your Api key to .env file to get data.
+
+
 ## Project setup
 ```
 npm install
