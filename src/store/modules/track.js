@@ -16,7 +16,9 @@ const mutations = {
 
 const actions = {
   async fetchTracks (context) {
-    const response = await fetch ('http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=884c8b96729c7ab1f4706c7ea0de2c8d&format=json');
+
+    const key = process.env.VUE_APP_CODEAPI_KEY;
+    const response = await fetch (`http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=${key}&format=json`);
     const tracks = await response.json();
     context.commit('setTracks', tracks.tracks.track);
   },
