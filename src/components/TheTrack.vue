@@ -12,7 +12,7 @@
       >{{track.artist.name}}</router-link>
       <a 
       :href="track.artist.url" target="_blank" class="track__link"
-      >Artist's page on last.fm</a>
+      >artist's page on last.fm</a>
     </div>
   </div>
 </template>
