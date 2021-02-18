@@ -11,7 +11,7 @@
       :to="getArtistLink(track.artist.name)"
       >{{track.artist.name}}</router-link>
       <a 
-      :href="track.url" target="_blank" class="track__link"
+      :href="track.artist.url" target="_blank" class="track__link"
       >Artist's page on last.fm</a>
     </div>
   </div>
@@ -33,7 +33,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
