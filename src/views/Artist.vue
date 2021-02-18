@@ -6,7 +6,7 @@
     <h2 class="artist__name">{{artist.name}}</h2>
     <div class="container">
       <div class="artist__column">
-        <img class="artist__photo" 
+        <img
           :src="artist.image[3]['#text']"
           :alt="artist.name">
       </div>
@@ -38,7 +38,6 @@ export default {
     ...mapActions(['fetchArtist']),
     getName () {
       const urlParams = new URLSearchParams(window.location.search);
-
       return urlParams.get('name');
     }
   },
@@ -63,11 +62,6 @@ export default {
       @media(max-width: 850px){
         margin: 20px 0;
       }
-		}
-
-		// .artist__photo
-
-		&__photo {
 		}
 
 		// .artist__name
