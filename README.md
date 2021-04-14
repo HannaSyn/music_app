@@ -1,4 +1,4 @@
-# Room4.fm
+# Music_app
 
 Project made using Vue.js + Vuex + Vue CLI
 
